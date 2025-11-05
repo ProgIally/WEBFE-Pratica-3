@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projetos — Salve Corações Inundados</title>
+    <meta
+      name="description"
+      content="Projetos e ações de voluntariado para apoio a vítimas de desabamentos e inundações."
+    />
+    <link rel="stylesheet" href="assets/images/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-content">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Salve Corações Inundados — voltar ao início"
+        >
+          <img src="assets/images/logo.png" alt="Salve Corações Inundados" />
+        </a>
+
+        <nav class="navbar" id="navbar" aria-label="Navegação principal">
+          <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html" class="active">Projetos</a></li>
+            <li><a href="cadastro.html">Doar / Cadastrar</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <h1>Projetos</h1>
+
+      <div class="grid projects-grid" aria-live="polite">
+        <article class="card project-card">
+          <img
+            src="assets/images/projeto-exemplo.jpg"
+            alt="Abrigo emergencial montado"
+            class="card-image"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <p class="meta">Projeto em execução</p>
+            <h3>Ação: Abrigo Emergencial</h3>
+            <p>
+              Instalação de abrigos temporários e distribuição de kits de
+              primeiros socorros e higiene.
+            </p>
+            <div class="card-footer">
+              <span class="badge">Abrigo</span>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="cadastro.html">Ajudar</a>
+                <a class="btn btn-outline" href="#">Mais</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img
+            src="assets/images/voluntarios.jpg"
+            alt="Voluntários"
+            class="card-image"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <p class="meta">Parceria local</p>
+            <h3>Ação: Apoio às Comunidades Indígenas</h3>
+            <p>
+              Projetos de apoio cultural e reconstrução com participação das
+              lideranças locais.
+            </p>
+            <div class="card-footer">
+              <span class="badge">Cultura</span>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="cadastro.html">Voluntariar</a>
+                <a class="btn btn-outline" href="#">Detalhes</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="ano-2"></span> Salve Corações Inundados</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("ano-2").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/images/js/main.js" defer></script>
+  </body>
+</html>
+a

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Salve Corações Inundados — Início</title>
+    <meta
+      name="description"
+      content="Salve Corações Inundados: apoio a pessoas afetadas por desabamentos e inundações. Voluntariado, doações e transparência."
+    />
+    <!-- caminho conforme sua estrutura -->
+    <link rel="stylesheet" href="assets/images/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-content">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Salve Corações Inundados — voltar ao início"
+        >
+          <img src="assets/images/logo.png" alt="Salve Corações Inundados" />
+        </a>
+
+        <nav class="navbar" id="navbar" aria-label="Navegação principal">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Doar / Cadastrar</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <section class="hero" aria-labelledby="intro">
+        <div class="hero-content">
+          <h1 id="intro">Salve Corações Inundados</h1>
+          <p class="lead">
+            Apoiamos famílias e comunidades afetadas por desabamentos e
+            inundações — com abrigo, mantimentos e acolhimento.
+          </p>
+          <p class="cta">
+            <a class="btn btn-primary" href="cadastro.html">Doar / Ajudar</a>
+            <a class="btn btn-outline" href="projetos.html">Ver Projetos</a>
+          </p>
+        </div>
+
+        <figure class="hero-figure" aria-hidden="true">
+          <img
+            src="assets/images/hero.png"
+            alt="Equipe ajudando comunidade após inundação"
+            class="hero-image"
+            loading="lazy"
+          />
+        </figure>
+      </section>
+
+      <section class="space-top" aria-labelledby="missao">
+        <h2 id="missao">Nossa missão</h2>
+        <p>
+          Salvar vidas e reconstruir esperança oferecendo suporte emergencial,
+          abrigo temporário e apoio contínuo às comunidades afetadas.
+        </p>
+      </section>
+
+      <section class="space-top" aria-labelledby="contato">
+        <h2 id="contato">Contato</h2>
+        <address>
+          <p>Email: <a href="mailto:SCI@gmail.com">SCI@gmail.com</a></p>
+          <p>Telefone: <a href="tel:+551140028922">(11) 4002-8922</a></p>
+          <p>
+            Redes: <a href="#" aria-label="Facebook">Facebook</a> ·
+            <a href="#" aria-label="Instagram">Instagram</a>
+          </p>
+        </address>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="ano"></span> Salve Corações Inundados</p>
+      </div>
+    </footer>
+
+    <div id="modal-backdrop" class="modal-backdrop" aria-hidden="true">
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        tabindex="-1"
+      >
+        <h3 id="modal-title">Obrigado!</h3>
+        <p>Recebemos seu contato. Entraremos em breve.</p>
+        <p><button class="btn btn-primary" data-modal-close>Fechar</button></p>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("ano").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/images/js/main.js" defer></script>
+  </body>
+</html>
